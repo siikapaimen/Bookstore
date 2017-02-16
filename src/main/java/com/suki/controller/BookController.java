@@ -15,6 +15,16 @@ public class BookController {
 	@Autowired
 	private BookRepository repository;
 	
+	@RequestMapping(value= "/")
+	public String blank(){
+	return "redirect:/booklist";
+	}
+	
+	@RequestMapping(value= "/login")
+	public String login(){
+	return "/login";
+	}
+	
 	@RequestMapping(value = "/addbook", method = RequestMethod.GET)
 	public String addBook(Model model) {
 		
