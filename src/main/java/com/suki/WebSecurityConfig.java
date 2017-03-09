@@ -35,7 +35,8 @@ protected void configure(HttpSecurity http) throws Exception {
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 		auth.userDetailsService(userDetailsService).passwordEncoder(new BCryptPasswordEncoder());
-			/*auth.inMemoryAuthentication()
+		
+		/*auth.inMemoryAuthentication()
 				.withUser("user").password("user").roles("USER")
 				.and()
 				.withUser("admin").password("admin").roles("ADMIN");

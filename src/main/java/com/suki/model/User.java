@@ -24,6 +24,18 @@ public class User {
 	public User() {
 		super();
 	}
+	
+	
+
+	public User(String username, String passwordHash, String email, String role) {
+		super();
+		this.username = username;
+		this.passwordHash = passwordHash;
+		this.email = email;
+		this.role = role;
+	}
+
+
 
 	public User(long id, String username, String passwordHash, String email,
 			String role) {
